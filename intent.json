@@ -1,0 +1,61 @@
+{
+    "intents":
+    [{
+        "context_set": "",
+        "patterns": ["Hello", "Hey you!", "Hello good morning", "hey", "howdy", "whats up", "how you", "hi"],
+        "responses":["Hello", "How can I help you", "Hello, good to see you", "Hey, how are you"],
+        "tag":"greeting"},
+     {
+         "patterns":["talk to you later", "yea bye", "bye", "goodbye", "see you later", "thanks a lot, bye"],
+         "responses":["have a nice day", "it was nice talking to you", "see you soon", "take care"],
+         "tag": "goodbye"},
+     {
+         "patterns":["thanks","thank you", "i appreciate this", "thanks a lot", "this is helpful", "grateful for this"],
+         "response":["my pleasure", "happy to help", "anytime"],
+         "tag": "thanks"},
+     {
+         "patterns":["what is on my schedule today", "what do I have to do today", "what will you have me do today?", "what am I doing today", "what should I do today?", "what am I doing today", "what's today's task"],
+         "responses":["what day is it?", "what day is today?", "for what day of the week"],
+         "tag": "get_schedule"},
+     {
+         "patterns":["Monday", "mon", "tue", "wed", "thur", "fri", "sat", "sun", "Tuesday", "wednesday", "thursday", "friday", "saturday"],
+         "responses":["Build a chatbot", "Write an article", "complete your store app", "watch tutorial videos"],
+         "tag": "tasks"},
+     {
+         "patterns":["can you add the tasks I couldn't finish to tomorrow's own ?", "please add those I couldn't complete to tomorrow's task", "add my remaining tasks to tomorrow", "add those uncompleted tasks to tomorrow please", "will you please add those tasks I couldn't complete to tomorrow's task", "add my incomplete tasks to tomorrow's task"],
+         "responses":["ok I'll do that", "ok I'm on it", "will do just that"],
+         "tag": "add_incomplete_tasks"},
+     {
+         "patterns":["I want to add a new project, can you help me out", "can you help me add a new project", "can you create a new project for me", "I want to create a new project"],
+         "responses":["what's the title", "what would you like to name it", "what would you like to call it", "what's the name"],
+         "tag": "add_project"},
+     {
+         "patterns":["The project title is My First Project", "Chat bot Project", "Class Project", "Android Project", "Sales App"],
+         "responses":["what's the duration", "for how long would you work on it", "how long will it last", "for how long", "what's the duration"],
+         "tag": "add_project_title"},
+     {
+         "patterns":["5 days","7 days", "3 days","1 week","1 month","3 months","7 months","1 year","5 years"],
+         "responses":["anything else you would like to say about it?", "do you mind giving a description?", "any other information?"],
+         "tag": "add_project_duration"},
+     {
+         "patterns":["This is the description of my first project. I want you to do this to that so that those can be put in place.","This should be a description for my chatbot sha", "no nothing else","naa its okay"],
+         "responses":["ok good. Added", "done"],
+         "tag": "add_project_description"},
+     {
+         "patterns":["Can you give me a list of my successes so far","Can you tell me my achievements so far","List my achievements so far"],
+         "responses":["Great success so far", "here's your list"],
+         "tag": "get_acheivements"},
+     {
+         "patterns":["what is for breakfast","what should I eat for breakfast","Breakfast","what should i eat this morning", "what should i cook this morning"],
+         "responses":["noodles", "spagetti", "bread and tea", "cereals", "hot cocoa"],
+         "tag": "breakfast"},
+     {
+         "patterns":["what is this week budget","what is the budget for this week","what's my budget for the week","can you tell me my budget for the week","how's my spending this week"],
+         "responses":["500 on transport, 1500 on food, 500 for any miscellanous", "500 on transport, 1000 for course manual, 3000 for new blender"],
+         "tag": "get_budget"},
+     {
+         "patterns":["what classes do I have today","what courses do I have today","What today's classes", "do i have a class today", "when's my next class"],
+         "responses":["MTH 201", "MTH 205", "CSC 201", "CPE 203", "MEE 203", "SE0 003"],
+         "tag": "get_class"}
+     ]
+}
